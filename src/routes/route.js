@@ -1,13 +1,19 @@
 import React from 'react';
-import { Route, BrowserRouter  } from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import Home from "../page/home/home";
 import Post from "../page/posts/posts";
 
-export default function Routes() {
+export default function Routing() {
     return (
         <BrowserRouter>
-            <Route path='/' component={Home} exact />
+            <Routes>
+
+
+                <Route path='/' element={<Home />} />
+
+
+            </Routes>
         </BrowserRouter>
     )
 }

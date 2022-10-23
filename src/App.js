@@ -1,9 +1,16 @@
 import React from 'react';
-import Routes from './routes/route';
+import Header from './components/header/header';
+import Routing from './routes/route';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
-export default function App() {
+function App() {
+  document.title = "Apiki  Blog "
   return (
-    <Routes />
+    <div className='App'>
+      <Header />
+      <Routing />
+    </div>
   )
 }
+export default App;
